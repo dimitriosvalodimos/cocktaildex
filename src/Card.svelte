@@ -1,5 +1,6 @@
 <script>
   import Lazy from "svelte-lazy";
+
   export let cocktail;
 
   export let imageHeight;
@@ -8,7 +9,7 @@
 <style>
   .card {
     background-color: #454343;
-    border-radius: 15px;
+    /* border-radius: 15px; */
   }
 
   .card-title {

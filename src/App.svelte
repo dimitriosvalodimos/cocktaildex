@@ -1,7 +1,6 @@
 <script>
   import Searchbar from "./Searchbar.svelte";
   import Card from "./Card.svelte";
-
   let cardData;
 
   let firstSearch = false;
@@ -44,7 +43,7 @@
     grid-row-gap: 2rem;
     width: 100%;
     height: 100%;
-    margin: auto;
+    /* margin: auto; */
     padding: 0 5rem;
   }
 
@@ -57,8 +56,13 @@
     text-align: center;
   }
   .spacer {
-    padding: 2rem;
+    position: fixed;
+    bottom: 0;
     grid-area: spacer;
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
   }
 </style>
 
@@ -81,5 +85,12 @@
       </div>
     {/if}
   </div>
-  <div class="spacer" />
+  <div class="spacer">
+    <!-- Icons made by
+    <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+      Freepik
+    </a>
+    from
+    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> -->
+  </div>
 </div>
