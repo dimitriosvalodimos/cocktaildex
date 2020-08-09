@@ -19,7 +19,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: "search search search" "cards cards cards" "cards cards cards" "spacer spacer spacer";
+    grid-template-areas:
+      "search search search"
+      "cards cards cards"
+      "cards cards cards"
+      "spacer spacer spacer";
   }
 
   .searchbar {
@@ -32,7 +36,6 @@
   }
   .cards {
     display: grid;
-    /* justify-content: space-evenly; */
     align-content: space-between;
     justify-content: space-around;
     grid-area: cards;
@@ -42,6 +45,7 @@
     width: 100%;
     height: 100%;
     margin: auto;
+    padding: 0 5rem;
   }
 
   .no-result {
