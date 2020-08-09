@@ -41,14 +41,19 @@
 
   const extractComponents = (items) => {
     const result = [];
-    items.drinks.forEach((cocktailObj) => {
-      result.push({
-        name: getName(cocktailObj),
-        thumbnail: getThumbnail(cocktailObj),
-        instructions: getInstructions(cocktailObj),
-        ingredients: combineIngredientsAndMeasurements(cocktailObj),
+
+    try {
+      items.drinks.forEach((cocktailObj) => {
+        result.push({
+          name: getName(cocktailObj),
+          thumbnail: getThumbnail(cocktailObj),
+          instructions: getInstructions(cocktailObj),
+          ingredients: combineIngredientsAndMeasurements(cocktailObj),
+        });
       });
-    });
+    } catch (error) {
+      console.error(error);
+    }
     propagateCocktailsUp(result);
   };
 

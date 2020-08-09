@@ -4,10 +4,13 @@
 
   let cardData;
 
+  let firstSearch = false;
+
   const imageHeight = 250;
 
   const handleCardPropagation = (event) => {
     cardData = event.detail.cocktails;
+    firstSearch = true;
   };
 </script>
 
@@ -29,13 +32,25 @@
   }
   .cards {
     display: grid;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    align-content: space-between;
+    justify-content: space-around;
     grid-area: cards;
     grid-template-rows: max-content;
     grid-template-columns: repeat(auto-fill, 250px);
     grid-row-gap: 2rem;
     width: 100%;
     height: 100%;
+    margin: auto;
+  }
+
+  .no-result {
+    display: grid;
+    grid-area: cards;
+    grid-column: 1 / -1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
   }
 </style>
 
@@ -44,12 +59,19 @@
     <Searchbar on:showCards={handleCardPropagation} />
   </div>
   <div class="cards">
-    {#if typeof cardData !== 'undefined' && cardData.length > 0}
+    {#if !firstSearch}
+      <div class="no-result">
+        <h1>Start by typing a cocktail name above</h1>
+      </div>
+    {:else if typeof cardData !== 'undefined' && cardData.length > 0}
       {#each cardData as cocktail}
         <Card {cocktail} {imageHeight} />
       {/each}
     {:else}
-      <h1>No results matching your search found</h1>
+      <div class="no-result">
+        <h1>No results matching your search where found</h1>
+      </div>
     {/if}
+
   </div>
 </div>
