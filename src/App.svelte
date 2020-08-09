@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: "search search search" "cards cards cards" "cards cards cards";
+    grid-template-areas: "search search search" "cards cards cards" "cards cards cards" "spacer spacer spacer";
   }
 
   .searchbar {
@@ -52,6 +52,10 @@
     width: 100%;
     text-align: center;
   }
+  .spacer {
+    padding: 2rem;
+    grid-area: spacer;
+  }
 </style>
 
 <div class="app">
@@ -72,6 +76,6 @@
         <h1>No results matching your search where found</h1>
       </div>
     {/if}
-
   </div>
+  <div class="spacer" />
 </div>
