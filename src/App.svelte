@@ -61,7 +61,7 @@
     grid-area: spacer;
     padding: 1rem;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
     text-align: center;
   }
 </style>
@@ -85,12 +85,5 @@
       </div>
     {/if}
   </div>
-  <div class="spacer">
-    <!-- Icons made by
-    <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-      Freepik
-    </a>
-    from
-    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> -->
-  </div>
+  <div class="spacer" />
 </div>
