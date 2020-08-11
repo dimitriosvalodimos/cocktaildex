@@ -1,6 +1,7 @@
 <script>
-  import Searchbar from "./Searchbar.svelte";
   import Card from "./Card.svelte";
+  import Searchbar from "./Searchbar.svelte";
+
   let cardData;
 
   let firstSearch = false;
