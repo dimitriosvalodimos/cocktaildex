@@ -73,6 +73,10 @@
     width: 100%;
   }
 
+  .search-title {
+    font-size: 3rem;
+  }
+
   .searchbar {
     border: none;
     margin-top: 2rem;
