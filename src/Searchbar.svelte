@@ -83,7 +83,7 @@
     width: max(50%, 250px);
     text-align: left;
     padding: 1rem 1rem;
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.5));
     /* box-shadow: 0 1.6px 1.2px rgba(0, 0, 0, 0.015),
       0 3.4px 2.7px rgba(0, 0, 0, 0.022), 0 5.8px 4.6px rgba(0, 0, 0, 0.027),
       0 8.7px 6.9px rgba(0, 0, 0, 0.031), 0 12.5px 10px rgba(0, 0, 0, 0.035),
