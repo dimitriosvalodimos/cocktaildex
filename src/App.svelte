@@ -41,10 +41,9 @@
     grid-area: cards;
     grid-template-rows: max-content;
     grid-template-columns: repeat(auto-fill, 250px);
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
     width: 100%;
     height: 100%;
-    /* margin: auto; */
     padding: 0 5rem;
   }
 

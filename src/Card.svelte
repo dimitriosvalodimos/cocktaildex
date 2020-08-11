@@ -8,18 +8,18 @@
 
 <style>
   .card {
-    background-color: #454343;
-    /* border-radius: 15px; */
+    background-color: white;
+    border-radius: 15px;
   }
 
   .card-title {
     text-align: center;
-    color: white;
+    color: #000;
   }
 
   .card-body {
     padding: 1rem;
-    color: white;
+    color: #000;
   }
 
   .card-ingredient-list {

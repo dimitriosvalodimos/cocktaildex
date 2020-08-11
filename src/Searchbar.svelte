@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import { element } from "svelte/internal";
+
   const dispatch = createEventDispatcher();
 
   const BASE_URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
@@ -72,9 +72,6 @@
     margin: 3rem;
     width: 100%;
   }
-  .search-title {
-    font-size: 3rem;
-  }
 
   .searchbar {
     border: none;
@@ -83,6 +80,12 @@
     text-align: left;
     padding: 1rem 1rem;
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+    /* box-shadow: 0 1.6px 1.2px rgba(0, 0, 0, 0.015),
+      0 3.4px 2.7px rgba(0, 0, 0, 0.022), 0 5.8px 4.6px rgba(0, 0, 0, 0.027),
+      0 8.7px 6.9px rgba(0, 0, 0, 0.031), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+      0 17.7px 14.2px rgba(0, 0, 0, 0.039), 0 25.1px 20.1px rgba(0, 0, 0, 0.043),
+      0 36.5px 29.2px rgba(0, 0, 0, 0.048), 0 56.3px 45px rgba(0, 0, 0, 0.055),
+      0 100px 80px rgba(0, 0, 0, 0.07); */
   }
 </style>
 
